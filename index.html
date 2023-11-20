@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Lista de Supermercado</h1>
+
+    <label for="item">Adicionar Item</label><br />
+    <input placeholder="digite seu item" type="text" id="item" />
+    <button type="button" onclick="inserirItem()">inserir</button>
+    <br /><br />
+    <label for="itemRemovido">Remover item</label><br />
+    <input placeholder="Item a ser removido" type="text" id="itemRemovido" />
+    <button onclick='removerItemdaLista()'>remover</button>
+
+    <br /><br />
+    <label for="itemParaModificar">Modificar item</label><br />
+    <input placeholder="Item a ser Modificado" type="text" id="itemParaModificar" />
+    <input placeholder="Modificar por" type="text" id="itemModificado" />
+    <button onclick='editarItem()'>Modificar</button>
+
+    <ol id="listaItens"></ol>
+    <hr>
+    <br />
+    <label for="itemEncontrado">Encontrar item</label><br />
+    <input placeholder="Item a ser Encontrado" type="text" id="itemEncontrado" />
+    <button onclick='encontrarItemdaListaPeloNome()'>Encontrar</button>
+
+    <div id="texto"></div>
+
+
+    <script src="./index.js"></script>
+</body>
+
+</html>
